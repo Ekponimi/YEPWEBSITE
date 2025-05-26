@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ekponimi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <div>
-      <img src="c:\Users\NEWMAN ICHIPI\Downloads\moredeltalogo.svg", width="100", height="100">
-      <ul>
-       <li ><a href="">Home</a></li>
-        <li><a href="">Energy and innovation</a></li>
-        <li><a href="">Sustainability</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Career</a></li>
-      </ul>
-      </div>
-  </nav>
-</body>
-</head>
-  <style>
-   nav{
-      background-color: blue;
-      padding: 1rem;
-    }
-   nav ul{
-    padding:0;
-    margin: 0;
-    list-style:none ;
-      display:block;
-      justify-content: space-between;
-      
-    }
- li a{
-  text-decoration: none;
-  color: black;
-  text-align: center;
-  </style>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">NIMITECH</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero container">
+   <div class="hero-text">
+      <h1>Hello, I am Ekponimi Excel</h1>
+      <h2>A Front End Web Developer & </h2>
+       <h3>Computer Engineer</h3>
+       <a href="#" class="btn">Hire Me</a>
+   </div>
+    <div><img src="IMG-20220925-WA0034.jpg" alt="Ekponimi" class="hero-img" /></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about container">
+   <div><img src="IMG_1721.jpeg" alt="About Me" class="about-img" /></div>
+    <div class="about-text">
+     <div><a href=""><h1>About Me</h1></a></div>
+   <div><p>I am a Computer Engineer and Front End Web Developer, I am  passionate about creating user-friendly and visually appealing websites.
+      I specialize in computer repair, software installation, and troubleshooting the Computer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="progress">
+  <div class="progress-bar">
+<div><a href=""><h1>Skills</h1></a></div>
+    <div class="skill">
+      <label for="ux">UX</label><br>
+      <progress id="ux" value="80" max="100">80%</progress></br>
+    </div>
+    <div class="skill">
+      <label for="web">Website Design</label><br>
+      <progress id="web" value="89" max="100">70%</progress></br>
+    </div>
+    <div class="skill">
+      <label for="app">App Design</label><br>
+      <progress id="app" value="90" max="100">90%</progress></br>
+    </div>
+    <div class="skill">
+      <label for="repair">Computer Repair</label><br>
+      <progress id="repair" value="80" max="100">80%</progress></br>
+    </div>
+  </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services container">
+  <div><a href=""><h2>Services</h2></a></div>
+    <div class="service-grid">
+      <div class="card">
+        <h3>UI/UX</h3>
+        <p>User-friendly design services.</p>
+      </div>
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Modern websites for all business types.</p>
+      </div>
+      <div class="card">
+        <h3>App Design</h3>
+        <p>Responsive and accessible apps.</p>
+      </div>
+      <div class="card">
+        <h3>Computer Repair</h3>
+        <p>System maintenance and troubleshooting.</p>
+      </div>
+    </div>
+  </section>
+
+  
+            <section id="project-container">
+                <div class="project">
+                <div>
+                    <h3><a href="">Projects</a></h3>
+                </div>
+                <div>
+                    <p>Over the last three years of my career, I have done various projects that satisfied clients needs</p></div>
+                </div>
+                <div class="project-design">
+                   <div><button><a href="">All</a></button></div>
+                    <div><button><a href="">UI/UX</a></button></div>
+                    <div><button><a href="">Web design</a></button></div>
+                    <div><button><a href="">App design</a></button></div>
+                   <div><button><a href="">computer maintenance & repair</a></button></div>
+                </div>
+                <div class="project-img">
+                    <div>
+                       <button> <img src="Group 25.png", width="250px", height="340px"></button>
+                       <button><img src="Group 26.png", width="250px",height="250px"></button>
+                       <button><img src="Group 27.png", width="250px",height="250px"></button>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+  <!-- CONTACT / FOOTER -->
+  <section class="contact container">
+    <h2>Let’s Design Together</h2>
+    <p>At NIMITECH, we design your dream project with quality and creativity.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Contact Me</button>
+    </form>
+    <div class="social-icons">
+      <img src="001-instagram.png" alt="Instagram">
+      <img src="002-linkedin.png" alt="LinkedIn">
+      <img src="004-twitter.png" alt="Twitter">
+      <img src="003-facebook.png" alt="Facebook">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 NIMITECH All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
